@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thales Alves Amaral">
+    <meta name="description" content="Just a simple calculator">
+    <meta name="keywords" content="calculator">
+    <title>Calculadora</title>
+    <script src="assets/script.js"></script>
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/favicon.png" rel="icon">
+    <script src="https://kit.fontawesome.com/9e33a92b25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="calc">
+        <div id="display">
+        </div>
+        <div id="btn">
+            <button class="opextra" value="√(" onclick="calculatorInputs(this.value); ">√</button>
+            <button class="opextra" value="^(" onclick="calculatorInputs(this.value); ">x²</button>
+            <button class="opextra" value ="()" onclick="parenthesis();">()</button>
+            <button class="op" value="" onclick="clearDisplay();">AC</button>
+            <br>
+            <button class="numbers" value="9" onclick="calculatorInputs(this.value);">9</button>
+            <button class="numbers" value="8" onclick="calculatorInputs(this.value);">8</button>
+            <button class="numbers" value="7" onclick="calculatorInputs(this.value);">7</button>
+            <button class="op" value="*" onclick="calculatorInputs(this.value);">x</button>
+            <br>
+            <button class="numbers" value="6" onclick="calculatorInputs(this.value);">6</button>
+            <button class="numbers" value="5" onclick="calculatorInputs(this.value);">5</button>
+            <button class="numbers" value="4" onclick="calculatorInputs(this.value);">4</button>
+            <button class="op" value="/" onclick="calculatorInputs(this.value);">/</button>
+            <br>
+            <button class="numbers" value="3" onclick="calculatorInputs(this.value);">3</button>
+            <button class="numbers" value="2" onclick="calculatorInputs(this.value);">2</button>
+            <button class="numbers" value="1" onclick="calculatorInputs(this.value);">1</button>
+            <button class="op" value="+" onclick="calculatorInputs(this.value);">+</button>
+            <br>
+            <button class="numbers" value="0" onclick="calculatorInputs(this.value);">0</button>
+            <button class="decimal" value="." onclick="calculatorInputs(this.value);">.</button>
+            <button class="AC" value="" onclick="deleteDisplay();"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="op" value="-" onclick="calculatorInputs(this.value);">-</button>
+            <br>
+            <button class="op" value="sin(" onclick="calculatorInputs(this.value);">sin</button>
+            <button class="op" value="cos(" onclick="calculatorInputs(this.value);">cos</button>
+            <button class="op" value="tg(" onclick="calculatorInputs(this.value);">tg</button>
+            <button id="equal" value="=" onclick="Calc();">=</button>
+        </div>
+    </div>
+</body>
+</html>
